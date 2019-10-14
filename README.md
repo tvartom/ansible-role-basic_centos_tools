@@ -6,7 +6,7 @@ Some basic setup for CentOS 7 as an Ansible-role.
 Install role
 ------------
 
-Create `requirements.yml` in your ansible playbook-folder.
+Create `requirements.yml` in your ansible playbook-folder:
 
     ---
     # Documentation:
