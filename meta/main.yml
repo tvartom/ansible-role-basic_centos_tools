@@ -34,4 +34,8 @@ galaxy_info:
     # NOTE: A tag is limited to a single word comprised of alphanumeric characters.
     #       Maximum 20 tags per role.
 
-dependencies: []
+dependencies:
+    - name: tvartom.ius_yum_repo
+      src: https://github.com/tvartom/ansible-role-ius_yum_repo
+      scm: git
+      # version: "v1.0" # Omit for latest version.

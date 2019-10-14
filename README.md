@@ -3,6 +3,25 @@ ansible-role-basic_centos_tools
 
 Some basic setup for CentOS 7 as an Ansible-role.
 
+Install role
+------------
+
+Create `requirements.yml` in your ansible playbook-folder.
+
+    ---
+    # Documentation:
+    # https://docs.ansible.com/ansible/latest/reference_appendices/galaxy.html#installing-multiple-ro
+    
+    - name: tvartom.basic_centos_tools
+      src: https://github.com/tvartom/ansible-role-basic_centos_tools
+      scm: git
+      # version: "v1.0" # Omit for latest version.
+
+Run:
+
+    $ ansible-galaxy install -r requirements.yml -p roles/
+
+
 Requirements
 ------------
 
@@ -19,7 +38,7 @@ Look at defaults in defaults/main.yml
 Dependencies
 ------------
 
-None
+* tvartom.ius_yum_repo
 
 Example Playbook
 ----------------
