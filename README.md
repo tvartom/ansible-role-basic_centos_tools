@@ -1,5 +1,5 @@
-ansible-role-basic_centos_tools
-===============================
+tvartom.basic_centos_tools
+==========================
 
 Some basic setup for CentOS 7 as an Ansible-role.
 
@@ -46,7 +46,7 @@ Example Playbook
     - hosts: servers
       tasks:
          - include_role:
-             name: ansible-role-basic_centos_tools
+             name: tvartom.basic_centos_tools
            vars:
              basic:
                timezone: "Europe/Stockholm"
@@ -63,4 +63,3 @@ Author Information
 ------------------
 
 tvartom
-
